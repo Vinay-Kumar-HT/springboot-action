@@ -2,6 +2,8 @@ package com.action.githubaction;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
@@ -9,7 +11,7 @@ public class GithubActionApplication {
 
 	@GetMapping("/welcome")
 	public String welcome(){
-		return "Welcome to First Project !!!!";
+		return "Welcome to First Project !!!!!";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(GithubActionApplication.class, args);
